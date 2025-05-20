@@ -23,28 +23,50 @@ Execute the necessary commands/batch file for the desired output.
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "my-folder"
+```
+mkdir %userprofile%\Desktop\MyLab
+```
+![444634285-80370d59-0fee-4bd3-8c8d-75579ea43f9b](https://github.com/user-attachments/assets/94bb22ac-d40a-4c68-83c6-a6b35e3b2cb8)
 
 ## COMMAND AND OUTPUT
 
 Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
-
+```
+cd %userprofile%\Desktop\MyLab
+```
+![444634434-35039e63-542e-406a-a069-0c354690f62d](https://github.com/user-attachments/assets/1bcc7e5c-8e15-4e60-8a5b-594a83f231a5)
+![444634487-212e2ccf-0e2e-49e0-8c37-9762f0bd38d5](https://github.com/user-attachments/assets/b46bc1c9-246a-48f3-9f35-0f343a644b42)
 
 Create the file Rose.txt
 
-## COMMAND AND OUTPUT
-
+## COMMAND AND OUTPU
+```
+dir %userprofile%\Desktop\MyLab
+```
+![444634695-ca7e36bd-0027-43a9-913d-57176ea59df2](https://github.com/user-attachments/assets/4bb76f3f-8202-4d21-a1ef-7e78fe15a77a)
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
+```
+mkdir %userprofile%\Desktop\Backup
 
+copy MyFile.txt %userprofile%\Desktop\Backup
+```
 Copy the file hello.txt into the file hello1.txt
+![444634913-1aa3e077-5820-477e-b05c-bac217f007d5](https://github.com/user-attachments/assets/e2558c64-2904-41b3-83cd-7e8fd128a43e)
+![444635001-bf0c292e-7677-49dc-9dc3-09db0766a3df](https://github.com/user-attachments/assets/d7d04231-c1b3-44a4-882c-f53b12aa3c3b)
+
+
 
 ## COMMAND AND OUTPUT
-
+```
+mv Myfile.txt %userprofile%\Documents
+```
 Remove the file hello1.txt
+![444635197-13d10e67-7ecf-477d-819a-f8606fb2b4c9](https://github.com/user-attachments/assets/172379a2-6626-457b-80e7-2e2de6c36ecf)
 
 ## COMMAND AND OUTPUT
 
@@ -64,12 +86,18 @@ Compare the file hello.txt and rose.txt
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
-
+```
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+echo Backup completed successfully!
+```
 
 
 
 ## OUTPUT
 
+![444635643-fafecf65-151a-4219-956d-712d7b07c092](https://github.com/user-attachments/assets/dfd1187b-0282-4b39-a394-c40776d8c9d9)
 
 
 Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
